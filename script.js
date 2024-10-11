@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim",
-                afirmativa: "Afirmativa da alternativa 1"
+                afirmativa: "Você gosta da ideia de Inteligência Artificial?"
             },
             {
                 texto: "Não",
-                afirmativa: "Afirmativa da alternativa 2"
+                afirmativa: "Você gosta da ideia de Inteligência Artificial?"
             }
         ]
     },
@@ -23,11 +23,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Nunca usei",
-                afirmativa: "Afirmativa da alternativa 1"
+                afirmativa: "Vocẽ já usou a Inteligência Artificial?"
             },
             {
                 texto: "já usei",
-                afirmativa: "Afirmativa da alternativa 2"
+                afirmativa: "Vocẽ já usou a Inteligência Artificial?"
             }
         ]
     },
@@ -36,11 +36,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim",
-                afirmativa: "Afirmativa da alternativa 1"
+                afirmativa: "Ela já te ajudou de alguma forma?"
             },
             {
                 texto: "Não",
-                afirmativa: "Afirmativa da alternativa 2"
+                afirmativa: "Ela já te ajudou de alguma forma?"
             }
         ]
     }
@@ -70,7 +70,7 @@ function mostraAlternativas() {
 }
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmativa;
-    respostas += afirmacoes;
+    respostas += afirmacoes + " ";
     posicao++;
     mostraPergunta();
 }
